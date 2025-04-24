@@ -17,9 +17,9 @@
 
 ## This is my first website 
 
-### 1. Portfolio Website
+### 1. Portfolio idea
 - **Description**: A  active portofolio with many animations css and html
-- **Tech Stack**: HTML5,  JavaScript
+- **Tech Stack**: HTML5,  css
 
 ##  stats
 

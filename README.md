@@ -19,7 +19,7 @@
 
 ### 1. Portfolio idea
 - **Description**: A  active portofolio with many animations css and html
-- **Tech Stack**: HTML5,  css
+- **Tech Stack**: HTML5 AND CSS
 
 ##  stats
 

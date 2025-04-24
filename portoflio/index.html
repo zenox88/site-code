@@ -3,135 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portoflio</title>
+    <title>you're text</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="noise-overlay"></div>
-    <div class="gradient-sphere"></div>
-    
-    <header class="header">
-        <nav class="nav-container reveal-from-top">
-            <div class="logo">
-                <span class="bracket">{</span>
-                <span class="logo-text">Portfolio</span>
-                <span class="bracket">}</span>
-            </div>
-            <div class="nav-links">
-                <a href="#text" class="nav-link active"><span>01.</span>text</a>
-                <a href="#text" class="nav-link"><span>02.</span>text</a>
-                <a href="#text" class="nav-link"><span>03.</span>text</a>
-                <a href="#text" class="nav-link"><span>04.</span>text</a>
-            </div>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <header>
+        <div class="logo">&lt;you're text /&gt;</div>
+        <nav>
+            <a href="#about"><span>01.</span>you're text</a>
+            <a href="#work"><span>02.</span>you're text</a>
+            <a href="#projects"><span>03.</span>you're text</a>
+            <a href="#contact"><span>04.</span>you're text</a>
         </nav>
     </header>
 
-    <main class="main-content">
-        <section id="home" class="hero-section">
-            <div class="hero-content reveal-from-bottom">
-                <div class="title-container">
-                    <h1 class="main-title">
-                        <span class="line">text</span>
-                        <span class="line">text<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portoflio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="noise-overlay"></div>
-    <div class="gradient-sphere"></div>
-    
-    <header class="header">
-        <nav class="nav-container reveal-from-top">
-            <div class="logo">
-                <span class="bracket">{</span>
-                <span class="logo-text">Portfolio</span>
-                <span class="bracket">}</span>
+    <main>
+        <div class="hero">
+            <div class="intro">you're text</div>
+            <h1>
+                <div class="name">you're text</div>
+                <div class="title">you're text</div>
+            </h1>
+            <p>you're text</p>
+            <div class="buttons">
+                <a href="#work" class="primary-btn">you're text <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="secondary-btn">you're text</a>
             </div>
-            <div class="nav-links">
-                <a href="#text" class="nav-link active"><span>01.</span>text</a>
-                <a href="#text" class="nav-link"><span>02.</span>text</a>
-                <a href="#text" class="nav-link"><span>03.</span>text</a>
-                <a href="#text" class="nav-link"><span>04.</span>text</a>
+            <div class="scroll">
+                <div class="mouse"></div>
+                <span>scroll down to see more</span>
             </div>
-        </nav>
-    </header>
-
-    <main class="main-content">
-        <section id="home" class="hero-section">
-            <div class="hero-content reveal-from-bottom">
-                <div class="title-container">
-                    <h1 class="main-title">
-                        <span class="line">Creative</span>
-                        <span class="line">Developer</span>
-                    </h1>
-                    <p class="subtitle">Crafting Digital Experiences</p>
-                </div>
-                
-                <div class="cta-container">
-                    <button class="cta-button primary">
-                        <span class="button-text">text</span>
-                        <span class="button-icon">→</span>
-                    </button>
-                    <button class="cta-button secondary">
-                        <span class="button-text">text</span>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <div class="scroll-text">Scroll to explore</div>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <div class="cursor">
-        <div class="cursor-dot"></div>
-        <div class="cursor-outline"></div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html> </span>
-                    </h1>
-                    <p class="subtitle">Crafting Digital Experiences</p>
-                </div>
-                
-                <div class="cta-container">
-                    <button class="cta-button primary">
-                        <span class="button-text">View Projects</span>
-                        <span class="button-icon">→</span>
-                    </button>
-                    <button class="cta-button secondary">
-                        <span class="button-text">Get in Touch</span>
-                    </button>
-                </div>
-            </div>
+    <script>
+        // Custom cursor functionality
+        const cursor = document.querySelector('.cursor');
+        const cursorDot = document.querySelector('.cursor-dot');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
             
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <div class="scroll-text">Scroll to explore</div>
-            </div>
-        </section>
-    </main>
+            cursorDot.style.left = e.clientX + 'px';
+            cursorDot.style.top = e.clientY + 'px';
+        });
 
-    <div class="cursor">
-        <div class="cursor-dot"></div>
-        <div class="cursor-outline"></div>
-    </div>
+        // Add hover effect for interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .logo');
+        
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                cursorDot.style.transform = 'scale(0)';
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursorDot.style.transform = 'scale(1)';
+            });
+        });
 
-    <script src="script.js"></script>
+        // Add click animation
+        document.addEventListener('mousedown', () => {
+            cursor.style.transform = 'scale(0.8)';
+            cursorDot.style.transform = 'scale(0.8)';
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.style.transform = 'scale(1)';
+            cursorDot.style.transform = 'scale(1)';
+        });
+    </script>
 </body>
 </html> 

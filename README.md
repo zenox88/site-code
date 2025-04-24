@@ -24,12 +24,12 @@
 ##  stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=dracula" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=zenox&show_icons=true&theme=dracula" alt="GitHub Stats" />
 </div>
 
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&color=blue&style=flat-square" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=zenox&color=blue&style=flat-square" alt="Profile views" />
 </div>

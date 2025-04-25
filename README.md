@@ -22,7 +22,7 @@
 - **Tech Stack**: HTML5 AND CSS
 
 ### 2 Interactive background
-- **Description*: A interactive sparkling background that moves around the text
+- **Description**: A interactive sparkling background that moves around the text
 - **Tech stack**: Html css and javascript
 
 ##  stats

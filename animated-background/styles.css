@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    line-height: 1.5;
+    position: relative;
+}
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.glitch-container {
+    position: relative;
+    font-size: 8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.glitch {
+    position: relative;
+    color: #fff;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #ff00c1;
+    animation: glitch-1 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: 2px 0 #00fff9;
+    animation: glitch-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-1 {
+    0% {
+        clip-path: inset(20% 0 30% 0);
+    }
+    20% {
+        clip-path: inset(65% 0 15% 0);
+    }
+    40% {
+        clip-path: inset(40% 0 43% 0);
+    }
+    60% {
+        clip-path: inset(25% 0 60% 0);
+    }
+    80% {
+        clip-path: inset(75% 0 5% 0);
+    }
+    100% {
+        clip-path: inset(50% 0 30% 0);
+    }
+}
+
+@keyframes glitch-2 {
+    0% {
+        clip-path: inset(25% 0 35% 0);
+    }
+    20% {
+        clip-path: inset(55% 0 25% 0);
+    }
+    40% {
+        clip-path: inset(35% 0 50% 0);
+    }
+    60% {
+        clip-path: inset(20% 0 30% 0);
+    }
+    80% {
+        clip-path: inset(45% 0 35% 0);
+    }
+    100% {
+        clip-path: inset(40% 0 35% 0);
+    }
+}
+
+.subtitle {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Add scanlines effect */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 4;
+    animation: scanlines 0.5s linear infinite;
+}
+
+@keyframes scanlines {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(2px);
+    }
+} 
+} 

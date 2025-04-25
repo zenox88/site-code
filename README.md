@@ -21,6 +21,10 @@
 - **Description**: A  active portofolio with many animations css and html
 - **Tech Stack**: HTML5 AND CSS
 
+### 2 Interactive background
+- **Description*: A interactive sparkling background that moves around the text
+- **Tech stack**: Html css and javascript
+
 ##  stats
 
 <div align="center">
